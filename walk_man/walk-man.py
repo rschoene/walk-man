@@ -6,13 +6,13 @@ pygame.init()
 
 pygame.mixer.init()
 
-crouch_sound = pygame.mixer.Sound("crouch.wav")
-jump_sound = pygame.mixer.Sound("jump.wav")
+crouch_sound = pygame.mixer.Sound("../sounds/crouch.wav")
+jump_sound = pygame.mixer.Sound("../sounds/jump.wav")
 
-left_sound = pygame.mixer.Sound("left.wav")
-right_sound = pygame.mixer.Sound("right.wav")
-back_sound = pygame.mixer.Sound("backward.wav")
-forward_sound = pygame.mixer.Sound("forward.wav")
+left_sound = pygame.mixer.Sound("../sounds/left.wav")
+right_sound = pygame.mixer.Sound("../sounds/right.wav")
+back_sound = pygame.mixer.Sound("../sounds/backward.wav")
+forward_sound = pygame.mixer.Sound("../sounds/forward.wav")
 
 def main():
     # Set the width and height of the screen (width, height), and name the window.
