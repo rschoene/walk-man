@@ -52,13 +52,7 @@ def main():
                 for action in button_actions:
                     if action == event.button:
                         if button_actions[action].get_num_channels() == 0:
-                            button_actions[action].play(loops=-1)
-
-            if event.type == pygame.JOYBUTTONUP:
-                print("Joystick button released.", event.button)
-                for action in button_actions:
-                    if action == event.button:
-                        button_actions[action].stop()
+                            button_actions[action].play()
 
             # Handle hotplugging
             if event.type == pygame.JOYDEVICEADDED:
