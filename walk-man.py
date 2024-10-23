@@ -6,16 +6,6 @@ pygame.init()
 
 pygame.mixer.init()
 
-one_sound = pygame.mixer.Sound("one.wav")
-two_sound = pygame.mixer.Sound("two.wav")
-three_sound = pygame.mixer.Sound("three.wav")
-four_sound = pygame.mixer.Sound("four.wav")
-five_sound = pygame.mixer.Sound("five.wav")
-six_sound = pygame.mixer.Sound("six.wav")
-seven_sound = pygame.mixer.Sound("seven.wav")
-eight_sound = pygame.mixer.Sound("eight.wav")
-
-
 crouch_sound = pygame.mixer.Sound("crouch.wav")
 jump_sound = pygame.mixer.Sound("jump.wav")
 
