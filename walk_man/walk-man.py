@@ -6,13 +6,13 @@ pygame.init()
 
 pygame.mixer.init()
 
-crouch_sound = pygame.mixer.Sound("crouch.wav")
-jump_sound = pygame.mixer.Sound("jump.wav")
+crouch_sound = pygame.mixer.Sound("../sounds/crouch.wav")
+jump_sound = pygame.mixer.Sound("../sounds/jump.wav")
 
-left_sound = pygame.mixer.Sound("left.wav")
-right_sound = pygame.mixer.Sound("right.wav")
-back_sound = pygame.mixer.Sound("backward.wav")
-forward_sound = pygame.mixer.Sound("forward.wav")
+left_sound = pygame.mixer.Sound("../sounds/left.wav")
+right_sound = pygame.mixer.Sound("../sounds/right.wav")
+back_sound = pygame.mixer.Sound("../sounds/backward.wav")
+forward_sound = pygame.mixer.Sound("../sounds/forward.wav")
 
 def main():
     # Set the width and height of the screen (width, height), and name the window.
@@ -52,13 +52,7 @@ def main():
                 for action in button_actions:
                     if action == event.button:
                         if button_actions[action].get_num_channels() == 0:
-                            button_actions[action].play(loops=-1)
-
-            if event.type == pygame.JOYBUTTONUP:
-                print("Joystick button released.", event.button)
-                for action in button_actions:
-                    if action == event.button:
-                        button_actions[action].stop()
+                            button_actions[action].play()
 
             # Handle hotplugging
             if event.type == pygame.JOYDEVICEADDED:
